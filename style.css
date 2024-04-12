@@ -1,0 +1,88 @@
+header {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#background {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 30, 128, 0.5),
+      rgba(0, 68, 255, 0.5)
+    ),
+    url("background.png") center/cover;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+#todo-all {
+  position: absolute;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1em;
+}
+header i {
+  font-size: 2em;
+  color: #fff;
+}
+#all,
+#activeDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#all{flex-direction: column;}
+#all-buttons{width: 500px;display: flex;flex-direction: row;justify-content: space-between;}
+#activeDiv {
+  gap: 15px;
+}
+#todo input,
+#all ul li {
+  text-align: center;
+  width: 500px;
+  outline: none;
+  height: 50px;
+  padding: 10px;
+  font: 400 1.1em sans-serif;
+}
+#all ul li{
+    background: #fff;
+    text-align: center;
+    margin-bottom: 3px;
+}
+#todo input,#all ul li,#all-buttons   {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+}
+#all ul li button{
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+}
+#all ul li:hover button{
+  display: block;
+}
+#all-buttons{
+    background-color: #fff;
+    height: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+#todo input{
+    margin-bottom: 40px;
+}
