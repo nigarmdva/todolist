@@ -98,7 +98,7 @@ header i {
 #clearList:hover,
 #left:hover {
   color: blue;
-  font-size: 1.1em;
+  font-size: 1.05em;
   transition: 0.2s;
 }
 #todo input {
