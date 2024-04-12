@@ -43,8 +43,15 @@ header i {
   display: flex;
   justify-content: space-between;
 }
-#all{flex-direction: column;}
-#all-buttons{width: 500px;display: flex;flex-direction: row;justify-content: space-between;}
+#all {
+  flex-direction: column;
+}
+#all-buttons {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 #activeDiv {
   gap: 15px;
 }
@@ -57,32 +64,43 @@ header i {
   padding: 10px;
   font: 400 1.1em sans-serif;
 }
-#all ul li{
-    background: #fff;
-    text-align: center;
-    margin-bottom: 3px;
+#all ul li {
+  background: #fff;
+  text-align: center;
+  margin-bottom: 3px;
 }
-#todo input,#all ul li,#all-buttons   {
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #9b9b9b;
-    border-bottom: 1px solid #9b9b9b;
+#todo input,
+#all ul li,
+#all-buttons {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
 }
-#all ul li button{
+#all ul li button {
   border: none;
   outline: none;
   display: none;
   cursor: pointer;
 }
-#all ul li:hover button{
+#all ul li:hover button {
   display: block;
 }
-#all-buttons{
-    background-color: #fff;
-    height: 25px;
-    padding: 5px;
-    cursor: pointer;
+#all-buttons {
+  background-color: #fff;
+  height: 25px;
+  padding: 5px;
+  cursor: pointer;
 }
-#todo input{
-    margin-bottom: 40px;
+#active:hover,
+#activeAll:hover,
+#completed:hover,
+#clearList:hover,
+#left:hover {
+  color: blue;
+  font-size: 1.1em;
+  transition: 0.2s;
+}
+#todo input {
+  margin-bottom: 40px;
 }

@@ -56,9 +56,8 @@ function show(){
             </div>
             <button onclick="del(${i})">X</button>
         </li>`;
+    }   
 
-
-    }
      
     list.innerHTML=kod
     const uncompleted = group.filter((item) => item.checked == false)
@@ -73,8 +72,8 @@ function show(){
         for(let i=0;i<uncompleted.length;i++){
             kod1 += `<li style="display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; align-items: center;">
-                <input type="checkbox" ${uncompleted[i].checked ? 'checked' : ''} onchange="chng(${i})" />
-                <span style="text-decoration:${uncompleted[i].checked ? "line-through" : "none"}">${uncompleted[i].value}</span>
+                <input type="checkbox" onchange="chng(${i})" />
+                <span style="text-decoration:none;">${uncompleted[i].value}</span>
             </div>
             <button onclick="del(${i})">X</button>
         </li>`;
@@ -90,8 +89,8 @@ function show(){
         for(let i=0;i<completedlist.length;i++){
             kod2 += `<li style="display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; align-items: center;">
-                <input type="checkbox" ${completedlist[i].checked ? 'checked' : ''} onchange="chng(${i})" />
-                <span style="text-decoration:${completedlist[i].checked ? "line-through" : "none"}">${completedlist[i].value}</span>
+                <input type="checkbox" checked onchange="chng(${i})" />
+                <span style="text-decoration:line-through;">${completedlist[i].value}</span>
             </div>
             <button onclick="del(${i})">X</button>
         </li>`;
